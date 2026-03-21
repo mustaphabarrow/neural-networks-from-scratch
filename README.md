@@ -1,20 +1,36 @@
 # Neural Networks from Scratch (NumPy)
 
-This project implements neural networks from first principles using NumPy, including:
+## Project Overview
+This project implements neural networks from scratch using NumPy, without relying on high-level deep learning frameworks.
 
+It covers the full pipeline:
 - Forward propagation
+- Activation functions
+- Loss computation
 - Backpropagation
-- Activation functions (ReLU, Softmax)
-- Loss functions (Categorical Cross-Entropy)
-- Training loops
+- Basic training loop
 
-The goal is to deeply understand the mathematical foundations of deep learning without relying on high-level frameworks.
+## Project Structure
+- nnfs/ → core implementation (layers, activations, losses)
+- notebooks/ → step-by-step experiments and learning process
+- examples/ → applied classification tasks
 
-## Experiments
-- Spiral dataset classification
-- Vertical dataset classification
+## Key Features
+- Dense (fully connected) layers
+- ReLU and Softmax activation functions
+- Categorical Cross-Entropy loss
+- Manual backpropagation implementation
 
-## Future Work
-- Optimizers (SGD, Adam)
-- Regularization
-- Batch training
+## What I Learned
+- How neural networks operate mathematically
+- How backpropagation applies the chain rule
+- How to implement ML systems without frameworks
+- How to structure machine learning code properly
+
+## Future Improvements
+- Add optimizers (SGD, Adam)
+- Improve training performance
+- Add visualization (loss curves)
+
+## Author
+Mustapha Barrow
