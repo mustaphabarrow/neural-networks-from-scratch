@@ -1,7 +1,6 @@
 import numpy as np
+import nnfs
 from nnfs.datasets import vertical_data
-
-X, y = vertical_data(samples=100, classes=3)
 
 from nnfs.layers import Layer_Dense
 from nnfs.activations import Activation_ReLU, Activation_Softmax
@@ -10,8 +9,8 @@ from nnfs.optimizers import Optimizer_SGD
 
 nnfs.init()
 
-# Create dataset
-X, y = spiral_data(samples=100, classes=3)
+# Create dataset - FIXED: using vertical_data instead of spiral_data
+X, y = vertical_data(samples=100, classes=3)
 
 # Create model
 dense1 = Layer_Dense(2, 3)
@@ -25,7 +24,6 @@ optimizer = Optimizer_SGD(learning_rate=0.1)
 
 # Training loop
 for epoch in range(1000):
-
     # Forward pass
     dense1.forward(X)
     activation1.forward(dense1.outputs)
